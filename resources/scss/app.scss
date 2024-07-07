@@ -1,2 +1,10 @@
 /*resources/scss/app.scss*/
 @import "~bootstrap/scss/bootstrap";
+
+header,
+footer {
+    background-color: orange;
+}
+.logo {
+    width: 50px;
+}

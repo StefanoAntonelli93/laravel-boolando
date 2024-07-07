@@ -14,5 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('home');
+})->name('home');
+
+
+// creo rotte per products e about
+
+Route::get('/products-boolando', function () {
+    return view('products');
+})->name('products');
+
+Route::get('/about-boolando', function () {
+    return view('about');
+})->name('about');

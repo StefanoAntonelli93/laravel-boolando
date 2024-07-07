@@ -10,8 +10,13 @@
 </head>
 
 <body>
-    <h1>Laravel Template</h1>
-    <img src="{{ Vite::asset('resources/img/logo.jpg') }}" alt="pic">
+    @include('shared.header')
+    <main>
+        <h1>main boolando</h1>
+        <!-- <img src="{{ Vite::asset('resources/img/logo.jpg') }}" alt="pic"> -->
+
+    </main>
+    @include('shared.footer')
 </body>
 
 </html>
