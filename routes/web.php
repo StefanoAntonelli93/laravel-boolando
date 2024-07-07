@@ -14,16 +14,33 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $data = [
+        'title' => 'BENVENUTO SU BOOLANDO!',
+    ];
+    return view('home', $data);
 })->name('home');
 
 
-// creo rotte per products e about
+// creo rotta per products 
 
 Route::get('/products-boolando', function () {
-    return view('products');
+    // prendo array da config->products.php cosi qui non occupa spazio
+    $dress = config('products');
+
+    $data = [
+        'title' => 'I nostri Prodotti',
+        'dress' => $dress
+    ];
+
+    return view('products', $data);
 })->name('products');
 
+
+// creo rotta per about 
+
 Route::get('/about-boolando', function () {
-    return view('about');
+    $data = [
+        'title' => 'About us',
+    ];
+    return view('about', $data);
 })->name('about');

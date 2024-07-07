@@ -10,7 +10,9 @@
                         <li><a href="{{ route('about') }}">About</a></li>
                     </ul>
                 </div>
-                <div class="col"> <img class="logo" src="{{ Vite::asset('resources/img/boolean-logo.png') }}" alt="pic">
+                <div class="col">
+                    <!-- aggiungo immagine con assets vite -->
+                    <img class="logo" src="{{ Vite::asset('resources/img/boolean-logo.png') }}" alt="pic">
                 </div>
                 <div class="col-4">
                     <ul class=" d-flex justify-content-end gap-3 align-items-center list-unstyled text-white">
