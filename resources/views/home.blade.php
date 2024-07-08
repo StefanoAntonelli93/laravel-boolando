@@ -2,7 +2,7 @@
 
 <!-- cambio title -->
 @section('page-title')
-MENU-BOOLANDO
+HOME-BOOLANDO
 @endsection
 
 @section('home')
