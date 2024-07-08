@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 // })->name('home');
 
 // creo rotta homepage per il controller
-Route::get('/', [PageController::class, 'index']);
+Route::get('/', [PageController::class, 'index'])->name('home');
 
 
 // creo rotta per products 
