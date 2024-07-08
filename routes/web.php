@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Guest\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,12 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $data = [
-        'title' => 'BENVENUTO SU BOOLANDO!',
-    ];
-    return view('home', $data);
-})->name('home');
+// Route::get('/', function () {
+//     $data = [
+//         'title' => 'BENVENUTO SU BOOLANDO!',
+//     ];
+//     return view('home', $data);
+// })->name('home');
+
+// creo rotta homepage per il controller
+Route::get('/', [PageController::class, 'index']);
 
 
 // creo rotta per products 
